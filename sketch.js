@@ -39,8 +39,8 @@ var origin = {
             y: 0
         },
         rightUp: {
-            x: 800,
-            y: 100
+            x: 700,
+            y: 200
         },
         leftDown: {
             x: 100,
@@ -108,6 +108,17 @@ function updateFreq() {
 
 function drawQuad() {
 
+    if (delayTime < 30) {
+        delayTime += 1;
+        return;
+    }
+
+    updateFreq();
+    toogleMove();
+    strokeWeight(8);
+    fill(COLOR.R, COLOR.G, COLOR.B);
+    stroke(COLOR.STROKE.R, COLOR.STROKE.G, COLOR.STROKE.B);
+
     current = [
         /* Left up corner */
         mouseX - (60 + move),
@@ -126,33 +137,33 @@ function drawQuad() {
         origin.position.leftDown.y + move
     ];
 
+
     framesHistory.unshift(current);
 
     if (!mouseIsPressed) {
 
-        var toErase = framesHistory.pop();
-
-        stroke(COLOR.BACKGROUND.R, COLOR.BACKGROUND.G, COLOR.BACKGROUND.B);
+        strokeWeight(4);
+        stroke(0, 0, 0);
         fill(COLOR.BACKGROUND.R, COLOR.BACKGROUND.G, COLOR.BACKGROUND.B);
-        quad(
-            toErase[0],
-            toErase[1],
-            toErase[2],
-            toErase[3],
-            toErase[4],
-            toErase[5],
-            toErase[6],
-            toErase[7]
-        );
-        fill(COLOR.R, COLOR.G, COLOR.B);
-        stroke(COLOR.STROKE.R, COLOR.STROKE.G, COLOR.STROKE.B);
+
+        if (framesHistory.length) {
+            var toErase = framesHistory.pop();
+
+            quad(
+                toErase[0],
+                toErase[1],
+                toErase[2],
+                toErase[3],
+                toErase[4],
+                toErase[5],
+                toErase[6],
+                toErase[7]
+            );
+        }
+
     }
 
-
-    toogleMove();
-    updateFreq();
-    if (delayTime == 60) {
-      quad(
+    quad(
         current[0],
         current[1],
         current[2],
@@ -161,10 +172,7 @@ function drawQuad() {
         current[5],
         current[6],
         current[7]
-      );
-    } else {
-      delayTime += 1;
-    }
+    );
 
 }
 
