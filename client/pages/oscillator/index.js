@@ -190,7 +190,6 @@ function setup() {
     osc.amp(0.5, 0.05);
 }
 
-console.log('before ths')
 /*
  * Draw fps
  */
@@ -198,3 +197,5 @@ function draw() {
     setStyle(move);
     drawQuad();
 }
+
+console.log('Initializing oscillator...')
