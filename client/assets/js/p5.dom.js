@@ -1809,7 +1809,7 @@
    *  @example
    *  <div><code>
    *  function setup() {
-   *    audioEl = createAudio('assets/beat.mp3');
+   *    audioEl = createAudio('beat.mp3');
    *    audioEl.showControls(true);
    *    audioEl.onended(sayDone);
    *  }
@@ -1951,7 +1951,7 @@
    *  function setup() {
    *    background(255,255,255);
    *
-   *    audioEl = createAudio('assets/beat.mp3');
+   *    audioEl = createAudio('beat.mp3');
    *    audioEl.showControls();
    *
    *    // schedule three calls to changeBackground

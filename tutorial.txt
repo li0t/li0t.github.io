@@ -59,7 +59,7 @@ Instructions:
 		  home/end, and the spacebar to scroll the page.
 
 		Note that any (or all) of these scroll-assist features can be turned off (and in some
-		cases customized). See the top of assets/js/main.js for more information.
+		cases customized). See the top of js/main.js for more information.
 
 
 	Span Modifiers

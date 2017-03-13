@@ -10,16 +10,27 @@ const paths = {
   watch: require('./build/paths/watch.json')
 };
 
+const ALL_FILES =  '/**';
+const EXCLUDE =   '!';
+
+const exclusions = {
+  styles :  EXCLUDE + paths.dest.styles + '/font-awesome.min.css'
+};
+
 /**** Output file names ****/
 const outfiles = {
   styles: 'main'
 };
 
+console.log(paths.dest.styles + ALL_FILES)
+console.log(EXCLUDE + paths.dest.styles)
+console.log( exclusions.styles)
+
 /**** STYLES ****/
 const styles = require('./build/styles');
 
 gulp.task('styles:clean', () => {
-  del.sync(paths.dest.styles);
+  del.sync([paths.dest.styles + ALL_FILES, EXCLUDE + paths.dest.styles,  exclusions.styles] );
 });
 
 gulp.task('styles:minify', ['styles:clean'], () => {
@@ -40,6 +51,6 @@ gulp.task('compile', ['styles:compile']);
 gulp.task('default', ['styles:minify']);
 
 /* Watch for file changes */
-gulp.task('watch', ['compile'], () => {
-  gulp.watch(paths.watch.styles, ['styles:compile']);
+gulp.task('watch', ['default'], () => {
+  gulp.watch(paths.watch.styles, ['styles:minify']);
 });

@@ -8651,7 +8651,7 @@ var p5 = function(sketch, node, sync) {
    * var img;
    * var c;
    * function preload() {  // preload() runs once
-   *   img = loadImage('assets/laDefense.jpg');
+   *   img = loadImage('laDefense.jpg');
    * }
    *
    * function setup() {  // setup() waits until preload() is done
@@ -17635,7 +17635,7 @@ _dereq_('../core/error_helpers');
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/laDefense.jpg");
+ *   img = loadImage("laDefense.jpg");
  * }
  * function setup() {
  *   image(img, 0, 0);
@@ -17646,7 +17646,7 @@ _dereq_('../core/error_helpers');
  * <code>
  * function setup() {
  *   // here we use a callback to display the image after loading
- *   loadImage("assets/laDefense.jpg", function(img) {
+ *   loadImage("laDefense.jpg", function(img) {
  *     image(img, 0, 0);
  *   });
  * }
@@ -17746,7 +17746,7 @@ function _sAssign(sVal, iVal) {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/laDefense.jpg");
+ *   img = loadImage("laDefense.jpg");
  * }
  * function setup() {
  *   image(img, 0, 0);
@@ -17759,7 +17759,7 @@ function _sAssign(sVal, iVal) {
  * <code>
  * function setup() {
  *   // here we use a callback to display the image after loading
- *   loadImage("assets/laDefense.jpg", function(img) {
+ *   loadImage("laDefense.jpg", function(img) {
  *     image(img, 0, 0);
  *   });
  * }
@@ -17849,7 +17849,7 @@ p5.prototype.image =
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/laDefense.jpg");
+ *   img = loadImage("laDefense.jpg");
  * }
  * function setup() {
  *   image(img, 0, 0);
@@ -17863,7 +17863,7 @@ p5.prototype.image =
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/laDefense.jpg");
+ *   img = loadImage("laDefense.jpg");
  * }
  * function setup() {
  *   image(img, 0, 0);
@@ -17877,7 +17877,7 @@ p5.prototype.image =
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/laDefense.jpg");
+ *   img = loadImage("laDefense.jpg");
  * }
  * function setup() {
  *   image(img, 0, 0);
@@ -17902,7 +17902,7 @@ p5.prototype.tint = function () {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/bricks.jpg");
+ *   img = loadImage("bricks.jpg");
  * }
  * function setup() {
  *   tint(0, 153, 204);  // Tint blue
@@ -17977,7 +17977,7 @@ p5.prototype._getTintedImageCanvas = function(img) {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/bricks.jpg");
+ *   img = loadImage("bricks.jpg");
  * }
  * function setup() {
  *   imageMode(CORNER);
@@ -17990,7 +17990,7 @@ p5.prototype._getTintedImageCanvas = function(img) {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/bricks.jpg");
+ *   img = loadImage("bricks.jpg");
  * }
  * function setup() {
  *   imageMode(CORNERS);
@@ -18003,7 +18003,7 @@ p5.prototype._getTintedImageCanvas = function(img) {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/bricks.jpg");
+ *   img = loadImage("bricks.jpg");
  * }
  * function setup() {
  *   imageMode(CENTER);
@@ -18076,7 +18076,7 @@ p5.Image = function(width, height){
    * <div><code>
    * var img;
    * function preload() {
-   *   img = loadImage("assets/rockies.jpg");
+   *   img = loadImage("rockies.jpg");
    * }
    *
    * function setup() {
@@ -18098,7 +18098,7 @@ p5.Image = function(width, height){
    * <div><code>
    * var img;
    * function preload() {
-   *   img = loadImage("assets/rockies.jpg");
+   *   img = loadImage("rockies.jpg");
    * }
    *
    * function setup() {
@@ -18202,7 +18202,7 @@ p5.Image.prototype._setProperty = function (prop, value) {
  * var halfImage;
  *
  * function preload() {
- *   myImage = loadImage("assets/rockies.jpg");
+ *   myImage = loadImage("rockies.jpg");
  * }
  *
  * function setup() {
@@ -18242,7 +18242,7 @@ p5.Image.prototype.loadPixels = function(){
  * var halfImage;
  *
  * function preload() {
- *   myImage = loadImage("assets/rockies.jpg");
+ *   myImage = loadImage("rockies.jpg");
  * }
  *
  * function setup() {
@@ -18286,7 +18286,7 @@ p5.Image.prototype.updatePixels = function(x, y, w, h){
  * var c;
  *
  * function preload() {
- *   myImage = loadImage("assets/rockies.jpg");
+ *   myImage = loadImage("rockies.jpg");
  * }
  *
  * function setup() {
@@ -18351,7 +18351,7 @@ p5.Image.prototype.set = function(x, y, imgOrCol){
  * var img;
  *
  * function setup() {
- *   img = loadImage("assets/rockies.jpg");
+ *   img = loadImage("rockies.jpg");
  * }
 
  * function draw() {
@@ -18435,8 +18435,8 @@ p5.Image.prototype.resize = function(width, height){
  * var y;
  *
  * function preload() {
- *   photo = loadImage("assets/rockies.jpg");
- *   bricks = loadImage("assets/bricks.jpg");
+ *   photo = loadImage("rockies.jpg");
+ *   bricks = loadImage("bricks.jpg");
  * }
  *
  * function setup() {
@@ -18462,8 +18462,8 @@ p5.Image.prototype.copy = function () {
  * <div><code>
  * var photo, maskImage;
  * function preload() {
- *   photo = loadImage("assets/rockies.jpg");
- *   maskImage = loadImage("assets/mask2.png");
+ *   photo = loadImage("rockies.jpg");
+ *   maskImage = loadImage("mask2.png");
  * }
  *
  * function setup() {
@@ -18523,8 +18523,8 @@ p5.Image.prototype.mask = function(p5Image) {
  * var photo2;
  *
  * function preload() {
- *   photo1 = loadImage("assets/rockies.jpg");
- *   photo2 = loadImage("assets/rockies.jpg");
+ *   photo1 = loadImage("rockies.jpg");
+ *   photo2 = loadImage("rockies.jpg");
  * }
  *
  * function setup() {
@@ -18567,8 +18567,8 @@ p5.Image.prototype.filter = function(operation, value) {
  * var bricks;
  *
  * function preload() {
- *   mountains = loadImage("assets/rockies.jpg");
- *   bricks = loadImage("assets/bricks_third.jpg");
+ *   mountains = loadImage("rockies.jpg");
+ *   bricks = loadImage("bricks_third.jpg");
  * }
  *
  * function setup() {
@@ -18582,8 +18582,8 @@ p5.Image.prototype.filter = function(operation, value) {
  * var bricks;
  *
  * function preload() {
- *   mountains = loadImage("assets/rockies.jpg");
- *   bricks = loadImage("assets/bricks_third.jpg");
+ *   mountains = loadImage("rockies.jpg");
+ *   bricks = loadImage("bricks_third.jpg");
  * }
  *
  * function setup() {
@@ -18597,8 +18597,8 @@ p5.Image.prototype.filter = function(operation, value) {
  * var bricks;
  *
  * function preload() {
- *   mountains = loadImage("assets/rockies.jpg");
- *   bricks = loadImage("assets/bricks_third.jpg");
+ *   mountains = loadImage("rockies.jpg");
+ *   bricks = loadImage("bricks_third.jpg");
  * }
  *
  * function setup() {
@@ -18625,7 +18625,7 @@ p5.Image.prototype.blend = function() {
  * var photo;
  *
  * function preload() {
- *   photo = loadImage("assets/rockies.jpg");
+ *   photo = loadImage("rockies.jpg");
  * }
  *
  * function draw() {
@@ -18777,8 +18777,8 @@ p5.prototype.pixels = [];
  * var img1;
  *
  * function preload() {
- *   img0 = loadImage("assets/rockies.jpg");
- *   img1 = loadImage("assets/bricks_third.jpg");
+ *   img0 = loadImage("rockies.jpg");
+ *   img1 = loadImage("bricks_third.jpg");
  * }
  *
  * function setup() {
@@ -18792,8 +18792,8 @@ p5.prototype.pixels = [];
  * var img1;
  *
  * function preload() {
- *   img0 = loadImage("assets/rockies.jpg");
- *   img1 = loadImage("assets/bricks_third.jpg");
+ *   img0 = loadImage("rockies.jpg");
+ *   img1 = loadImage("bricks_third.jpg");
  * }
  *
  * function setup() {
@@ -18807,8 +18807,8 @@ p5.prototype.pixels = [];
  * var img1;
  *
  * function preload() {
- *   img0 = loadImage("assets/rockies.jpg");
- *   img1 = loadImage("assets/bricks_third.jpg");
+ *   img0 = loadImage("rockies.jpg");
+ *   img1 = loadImage("bricks_third.jpg");
  * }
  *
  * function setup() {
@@ -18850,7 +18850,7 @@ p5.prototype.blend = function() {
  * var img;
  *
  * function preload() {
- *   img = loadImage("assets/rockies.jpg");
+ *   img = loadImage("rockies.jpg");
  * }
  *
  * function setup() {
@@ -18923,7 +18923,7 @@ p5.prototype.copy = function () {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/bricks.jpg");
+ *   img = loadImage("bricks.jpg");
  * }
  * function setup() {
  *  image(img, 0, 0);
@@ -18936,7 +18936,7 @@ p5.prototype.copy = function () {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/bricks.jpg");
+ *   img = loadImage("bricks.jpg");
  * }
  * function setup() {
  *  image(img, 0, 0);
@@ -18949,7 +18949,7 @@ p5.prototype.copy = function () {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/bricks.jpg");
+ *   img = loadImage("bricks.jpg");
  * }
  * function setup() {
  *  image(img, 0, 0);
@@ -18962,7 +18962,7 @@ p5.prototype.copy = function () {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/bricks.jpg");
+ *   img = loadImage("bricks.jpg");
  * }
  * function setup() {
  *  image(img, 0, 0);
@@ -18975,7 +18975,7 @@ p5.prototype.copy = function () {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/bricks.jpg");
+ *   img = loadImage("bricks.jpg");
  * }
  * function setup() {
  *  image(img, 0, 0);
@@ -18988,7 +18988,7 @@ p5.prototype.copy = function () {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/bricks.jpg");
+ *   img = loadImage("bricks.jpg");
  * }
  * function setup() {
  *  image(img, 0, 0);
@@ -19001,7 +19001,7 @@ p5.prototype.copy = function () {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/bricks.jpg");
+ *   img = loadImage("bricks.jpg");
  * }
  * function setup() {
  *  image(img, 0, 0);
@@ -19014,7 +19014,7 @@ p5.prototype.copy = function () {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/bricks.jpg");
+ *   img = loadImage("bricks.jpg");
  * }
  * function setup() {
  *  image(img, 0, 0);
@@ -19063,7 +19063,7 @@ p5.prototype.filter = function(operation, value) {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/rockies.jpg");
+ *   img = loadImage("rockies.jpg");
  * }
  * function setup() {
  *   image(img, 0, 0);
@@ -19077,7 +19077,7 @@ p5.prototype.filter = function(operation, value) {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/rockies.jpg");
+ *   img = loadImage("rockies.jpg");
  * }
  * function setup() {
  *   image(img, 0, 0);
@@ -19103,7 +19103,7 @@ p5.prototype.get = function(x, y, w, h){
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/rockies.jpg");
+ *   img = loadImage("rockies.jpg");
  * }
  *
  * function setup() {
@@ -19177,7 +19177,7 @@ p5.prototype.loadPixels = function() {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/rockies.jpg");
+ *   img = loadImage("rockies.jpg");
  * }
  *
  * function setup() {
@@ -19211,7 +19211,7 @@ p5.prototype.set = function (x, y, imgOrCol) {
  * <code>
  * var img;
  * function preload() {
- *   img = loadImage("assets/rockies.jpg");
+ *   img = loadImage("rockies.jpg");
  * }
  *
  * function setup() {
@@ -19298,7 +19298,7 @@ p5._getDecrementPreload = function () {
  * <div><code>
  * var myFont;
  * function preload() {
- *   myFont = loadFont('assets/AvenirNextLTPro-Demi.otf');
+ *   myFont = loadFont('AvenirNextLTPro-Demi.otf');
  * }
  *
  * function setup() {
@@ -19314,7 +19314,7 @@ p5._getDecrementPreload = function () {
  *
  * <div><code>
  * function setup() {
- *   loadFont('assets/AvenirNextLTPro-Demi.otf', drawText);
+ *   loadFont('AvenirNextLTPro-Demi.otf', drawText);
  * }
  *
  * function drawText(font) {
@@ -19332,7 +19332,7 @@ p5._getDecrementPreload = function () {
  * var myFont;
  *
  * function preload() {
- *   myFont = loadFont('assets/Avenir.otf');
+ *   myFont = loadFont('Avenir.otf');
  * }
  *
  * function setup() {
@@ -19548,7 +19548,7 @@ p5.prototype.loadJSON = function () {
  * <div><code>
  * var result;
  * function preload() {
- *   result = loadStrings('assets/test.txt');
+ *   result = loadStrings('test.txt');
  * }
 
  * function setup() {
@@ -19563,7 +19563,7 @@ p5.prototype.loadJSON = function () {
  *
  * <div><code>
  * function setup() {
- *   loadStrings('assets/test.txt', pickString);
+ *   loadStrings('test.txt', pickString);
  * }
  *
  * function pickString(result) {
@@ -19671,9 +19671,9 @@ p5.prototype.loadStrings = function (path, callback, errorCallback) {
  * function preload() {
  *   //my table is comma separated value "csv"
  *   //and has a header specifying the columns labels
- *   table = loadTable("assets/mammals.csv", "csv", "header");
+ *   table = loadTable("mammals.csv", "csv", "header");
  *   //the file can be remote
- *   //table = loadTable("http://p5js.org/reference/assets/mammals.csv",
+ *   //table = loadTable("http://p5js.org/reference/mammals.csv",
  *   //                  "csv", "header");
  * }
  *
@@ -20788,7 +20788,7 @@ p5.Table = function (rows) {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -20841,7 +20841,7 @@ p5.Table.prototype.addRow = function(row) {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -20888,7 +20888,7 @@ p5.Table.prototype.removeRow = function(id) {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -20927,7 +20927,7 @@ p5.Table.prototype.getRow = function(r) {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -20978,7 +20978,7 @@ p5.Table.prototype.getRows = function() {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -21040,7 +21040,7 @@ p5.Table.prototype.findRow = function(value, column) {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -21200,7 +21200,7 @@ p5.Table.prototype.matchRows = function(regexp, column) {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -21247,7 +21247,7 @@ p5.Table.prototype.getColumn = function(value) {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -21288,7 +21288,7 @@ p5.Table.prototype.clearRows = function() {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -21449,7 +21449,7 @@ p5.Table.prototype.trim = function(column) {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -21514,7 +21514,7 @@ p5.Table.prototype.removeColumn = function(c) {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -21560,7 +21560,7 @@ p5.Table.prototype.set = function(row, column, value) {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -21619,7 +21619,7 @@ p5.Table.prototype.setString = function(row, column, value){
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -21662,7 +21662,7 @@ p5.Table.prototype.get = function(row, column) {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -21703,7 +21703,7 @@ p5.Table.prototype.getNum = function(row, column) {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -21746,7 +21746,7 @@ p5.Table.prototype.getString = function(row, column) {
 	* function preload() {
 	*   //my table is comma separated value "csv"
 	*   //and has a header specifying the columns labels
-	*   table = loadTable("assets/mammals.csv", "csv", "header");
+	*   table = loadTable("mammals.csv", "csv", "header");
 	* }
 	*
 	* function setup() {
@@ -22000,7 +22000,7 @@ var p5 = _dereq_('../core/core');
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22050,7 +22050,7 @@ p5.XML = function () {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22087,7 +22087,7 @@ p5.XML.prototype.getParent = function() {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22122,7 +22122,7 @@ p5.XML.prototype.getName = function() {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22161,7 +22161,7 @@ p5.XML.prototype.setName = function(name) {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22198,7 +22198,7 @@ p5.XML.prototype.hasChildren = function() {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22236,7 +22236,7 @@ p5.XML.prototype.listChildren = function() {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22285,7 +22285,7 @@ p5.XML.prototype.getChildren = function(param) {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22300,7 +22300,7 @@ p5.XML.prototype.getChildren = function(param) {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22360,7 +22360,7 @@ p5.XML.prototype.addChild = function(node) {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22379,7 +22379,7 @@ p5.XML.prototype.addChild = function(node) {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22433,7 +22433,7 @@ p5.XML.prototype.removeChild = function(param) {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22470,7 +22470,7 @@ p5.XML.prototype.getAttributeCount = function() {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22507,7 +22507,7 @@ p5.XML.prototype.listAttributes = function() {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22550,7 +22550,7 @@ p5.XML.prototype.hasAttribute = function(name) {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22591,7 +22591,7 @@ p5.XML.prototype.getNumber = function(name, defaultValue) {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22629,7 +22629,7 @@ p5.XML.prototype.getString = function(name, defaultValue) {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22672,7 +22672,7 @@ p5.XML.prototype.setAttribute = function(name, value) {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -22708,7 +22708,7 @@ p5.XML.prototype.getContent = function(defaultValue) {
  * var xml;
  *
  * function preload() {
- *   xml = loadXML("assets/mammals.xml");
+ *   xml = loadXML("mammals.xml");
  * }
  *
  * function setup() {
@@ -25727,9 +25727,9 @@ p5.prototype.text = function(str, x, y, maxWidth, maxHeight) {
  * <code>
  * var fontRegular, fontItalic, fontBold;
  * function preload() {
- *    fontRegular = loadFont("assets/Regular.otf");
- *    fontItalic = loadFont("assets/Italic.ttf");
- *    fontBold = loadFont("assets/Bold.ttf");
+ *    fontRegular = loadFont("Regular.otf");
+ *    fontItalic = loadFont("Italic.ttf");
+ *    fontBold = loadFont("Bold.ttf");
  * }
  * function setup() {
  *    background(210);
@@ -25846,7 +25846,7 @@ p5.Font.prototype.list = function() {
  * var font;
  * var textString = 'Lorem ipsum dolor sit amet.';
  * function preload() {
- *    font = loadFont('./assets/Regular.otf');
+ *    font = loadFont('./Regular.otf');
  * };
  * function setup() {
  *    background(210);
@@ -28624,7 +28624,7 @@ _dereq_('./p5.Geometry');
  * function setup(){
  *   createCanvas(100, 100, WEBGL);
  *
- *   teapot = loadModel('assets/teapot.obj');
+ *   teapot = loadModel('teapot.obj');
  * }
  *
  * function draw(){
@@ -28782,7 +28782,7 @@ function parseObj( model, lines ) {
  * function setup(){
  *   createCanvas(100, 100, WEBGL);
  *
- *   teapot = loadModel('assets/teapot.obj');
+ *   teapot = loadModel('teapot.obj');
  * }
  *
  * function draw(){
@@ -28855,7 +28855,7 @@ p5.prototype.normalMaterial = function(){
  * var img;
  * function setup(){
  *   createCanvas(100, 100, WEBGL);
- *   img = loadImage("assets/laDefense.jpg");
+ *   img = loadImage("laDefense.jpg");
  * }
  *
  * function draw(){
@@ -28893,7 +28893,7 @@ p5.prototype.normalMaterial = function(){
  * <code>
  * var vid;
  * function preload(){
- *   vid = createVideo("assets/fingers.mov");
+ *   vid = createVideo("fingers.mov");
  *   vid.hide();
  *   vid.loop();
  * }

@@ -2,6 +2,7 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
+@import 'customs/index';
 @import 'font-awesome.min.css';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
 
@@ -29,10 +30,14 @@
 
 // Mixins.
 
-	@mixin gradient-background($tint: false, $opacity: 0.25, $stop1: 25%, $stop2: 50%, $angle: 45deg) {
+	@mixin gradient-background($tint: false, $opacity: 0.25, $angle: 45deg, $stop1: 20%, $stop2: 60%, $stop3: 100%) {
 		$background-image: (
-			url('../../images/overlay.png'),
-			linear-gradient($angle, transparentize(_palette(accent1), (1 - $opacity)) $stop1, transparentize(_palette(accent2), (1 - $opacity)) $stop2, transparentize(_palette(accent3), (1 - $opacity)))
+			url('../images/overlay.png'),
+			linear-gradient(
+				$angle,
+				transparentize(_palette(accent1), (1 - $opacity)) $stop1,
+				transparentize(_palette(accent2), (1 - $opacity)) $stop2,
+				transparentize(_palette(accent3), (1 - $opacity)) $stop3)
 		);
 
 		$background-size: (
@@ -51,8 +56,8 @@
 		background-size: $background-size;
 	}
 
-	@mixin gradient-background-small($tint: false, $opacity: 0.25, $stop1: 25%, $stop2: 50%) {
-		@include gradient-background($tint, $opacity, $stop1, $stop2, 135deg);
+	@mixin gradient-background-small($tint: false, $opacity: 0.25, $stop1: 25%, $stop2: 50%, $stop3: 100%) {
+		@include gradient-background($tint, $opacity, 135deg, $stop1, $stop2, $stop3);
 	}
 
 	@mixin spans($x) {
@@ -65,16 +70,24 @@
 			}
 
 			@if ($i < 10) {
-				.span-#{$i}-25 {
-					width: ($x * $i) + ($x * 0.25);
-				}
-
 				.span-#{$i}-5 {
 					width: ($x * $i) + ($x * 0.5);
 				}
 
+				.span-#{$i}-25 {
+					width: ($x * $i) + ($x * 0.25);
+				}
+
 				.span-#{$i}-75 {
 					width: ($x * $i) + ($x * 0.75);
+				}
+
+				.span-#{$i}-85 {
+					width: ($x * $i) + ($x * 0.85);
+				}
+
+				.span-#{$i}-95 {
+					width: ($x * $i) + ($x * 0.95);
 				}
 			}
 		}

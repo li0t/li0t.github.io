@@ -1,7 +1,7 @@
 {
     "styles": [
-    "assets/sass/main.scss",
-    "assets/sass/noscript.scss"
+    "client/styles/main.scss",
+    "client/styles/noscript.scss"
   ]
 
 }

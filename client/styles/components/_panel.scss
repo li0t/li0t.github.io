@@ -16,7 +16,7 @@
 		$desaturate: 3;
 
 		&.color0 {
-			@include gradient-background(false, 1, 20%, 60%);
+			@include gradient-background(false, 1, 45deg, 20%, 60%, 100%);
 		}
 
 		&.color1 {
@@ -37,6 +37,11 @@
 		&.color4 {
 			@include gradient-background;
 			background-color: _palette(accent4);
+		}
+
+		&.color-contrast {
+			@include gradient-background(true);
+			background-color: _palette(black);
 		}
 
 		&.color1-alt {

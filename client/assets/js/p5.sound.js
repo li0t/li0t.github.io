@@ -772,7 +772,7 @@ soundfile = function () {
    *  <div><code>
    *  
    *  function preload() {
-   *    mySound = loadSound('assets/doorbell.mp3');
+   *    mySound = loadSound('doorbell.mp3');
    *  }
    *
    *  function setup() {
@@ -873,7 +873,7 @@ soundfile = function () {
    *  @example 
    *  <div><code>
    *  function preload() {
-   *   mySound = loadSound('assets/doorbell.mp3');
+   *   mySound = loadSound('doorbell.mp3');
    *  }
    *
    *  function setup() {
@@ -1121,7 +1121,7 @@ soundfile = function () {
    *  @example
    *  <div><code>
    *  function setup(){
-   *    mySound = loadSound('assets/Damscray_DancingTiger.mp3');
+   *    mySound = loadSound('Damscray_DancingTiger.mp3');
    *  }
    *  function mouseClicked() {
    *    mySound.playMode('sustain');
@@ -1168,7 +1168,7 @@ soundfile = function () {
    *  
    *  function preload() {
    *    soundFormats('ogg', 'mp3');
-   *    soundFile = loadSound('assets/Damscray_-_Dancing_Tiger_02.mp3');
+   *    soundFile = loadSound('Damscray_-_Dancing_Tiger_02.mp3');
    *  }
    *  function setup() {
    *    background(0, 255, 0);
@@ -1379,7 +1379,7 @@ soundfile = function () {
    *
    *  function setup() {
    *    soundFormats('ogg', 'mp3');
-   *    soundFile = loadSound('assets/beatbox.mp3');
+   *    soundFile = loadSound('beatbox.mp3');
    *  }
    *  
    *  function draw() {
@@ -1424,7 +1424,7 @@ soundfile = function () {
    *  var song;
    *  
    *  function preload() {
-   *    song = loadSound('assets/Damscray_DancingTiger.mp3');
+   *    song = loadSound('Damscray_DancingTiger.mp3');
    *  }
    *
    *  function setup() {
@@ -1632,7 +1632,7 @@ soundfile = function () {
    *  var drum;
    *  
    *  function preload() {
-   *    drum = loadSound('assets/drum.mp3');
+   *    drum = loadSound('drum.mp3');
    *  }
    *
    *  function setup() {
@@ -2061,7 +2061,7 @@ soundfile = function () {
    *    textAlign(CENTER);
    *    text('click to play', width/2, height/2);
    *    
-   *    mySound = loadSound('assets/beat.mp3');
+   *    mySound = loadSound('beat.mp3');
    *
    *    // schedule calls to changeText
    *    mySound.addCue(0.50, changeText, "hello" );
@@ -2172,7 +2172,7 @@ amplitude = function () {
    *  var sound, amplitude, cnv;
    *  
    *  function preload(){
-   *    sound = loadSound('assets/beat.mp3');
+   *    sound = loadSound('beat.mp3');
    *  }
    *  function setup() {
    *    cnv = createCanvas(100,100);
@@ -2248,8 +2248,8 @@ amplitude = function () {
    *  @example
    *  <div><code>
    *  function preload(){
-   *    sound1 = loadSound('assets/beat.mp3');
-   *    sound2 = loadSound('assets/drum.mp3');
+   *    sound1 = loadSound('beat.mp3');
+   *    sound2 = loadSound('drum.mp3');
    *  }
    *  function setup(){
    *    amplitude = new p5.Amplitude();
@@ -2350,7 +2350,7 @@ amplitude = function () {
    *  @example
    *  <div><code>
    *  function preload(){
-   *    sound = loadSound('assets/beat.mp3');
+   *    sound = loadSound('beat.mp3');
    *  }
    *  function setup() { 
    *    amplitude = new p5.Amplitude();
@@ -2469,7 +2469,7 @@ fft = function () {
    *  @example
    *  <div><code>
    *  function preload(){
-   *    sound = loadSound('assets/Damscray_DancingTiger.mp3');
+   *    sound = loadSound('Damscray_DancingTiger.mp3');
    *  }
    *  
    *  function setup(){
@@ -7170,7 +7170,7 @@ reverb = function () {
    *  <div><code>
    *  var soundFile, reverb;
    *  function preload() {
-   *    soundFile = loadSound('assets/Damscray_DancingTiger.mp3');
+   *    soundFile = loadSound('Damscray_DancingTiger.mp3');
    *  }
    *
    *  function setup() {
@@ -7370,11 +7370,11 @@ reverb = function () {
    *    
    *    // Try replacing 'bx-spring' with other soundfiles like
    *    // 'concrete-tunnel' 'small-plate' 'drum' 'beatbox'
-   *    cVerb = createConvolver('assets/bx-spring.mp3');
+   *    cVerb = createConvolver('bx-spring.mp3');
    *
    *    // Try replacing 'Damscray_DancingTiger' with
    *    // 'beat', 'doorbell', lucky_dragons_-_power_melody'
-   *    sound = loadSound('assets/Damscray_DancingTiger.mp3');
+   *    sound = loadSound('Damscray_DancingTiger.mp3');
    *  }
    *  
    *  function setup() {
@@ -7443,11 +7443,11 @@ reverb = function () {
    *    
    *    // Try replacing 'bx-spring' with other soundfiles like
    *    // 'concrete-tunnel' 'small-plate' 'drum' 'beatbox'
-   *    cVerb = createConvolver('assets/bx-spring.mp3');
+   *    cVerb = createConvolver('bx-spring.mp3');
    *
    *    // Try replacing 'Damscray_DancingTiger' with
    *    // 'beat', 'doorbell', lucky_dragons_-_power_melody'
-   *    sound = loadSound('assets/Damscray_DancingTiger.mp3');
+   *    sound = loadSound('Damscray_DancingTiger.mp3');
    *  }
    *  
    *  function setup() {
@@ -7549,9 +7549,9 @@ reverb = function () {
    *  function preload() {
    *    soundFormats('ogg', 'mp3');
    *    
-   *    cVerb = createConvolver('assets/concrete-tunnel.mp3');
+   *    cVerb = createConvolver('concrete-tunnel.mp3');
    *
-   *    sound = loadSound('assets/beat.mp3');
+   *    sound = loadSound('beat.mp3');
    *  }
    *  
    *  function setup() {
@@ -7956,7 +7956,7 @@ looper = function () {
    *  var msg = 'click to play';
    *  
    *  function preload() {
-   *    mySound = loadSound('assets/beatbox.mp3');
+   *    mySound = loadSound('beatbox.mp3');
    *  }
    *  
    *  function setup() {
@@ -8024,8 +8024,8 @@ looper = function () {
    *  var msg = 'click to play';
    *  
    *  function preload() {
-   *    box = loadSound('assets/beatbox.mp3');
-   *    drum = loadSound('assets/drum.mp3');
+   *    box = loadSound('beatbox.mp3');
+   *    drum = loadSound('drum.mp3');
    *  }
    *  
    *  function setup() {
@@ -8725,7 +8725,7 @@ peakdetect = function () {
    *    fill(255);
    *    textAlign(CENTER);
    *
-   *    soundFile = loadSound('assets/beat.mp3');
+   *    soundFile = loadSound('beat.mp3');
    *
    *    // p5.PeakDetect requires a p5.FFT
    *    fft = new p5.FFT();
@@ -8844,7 +8844,7 @@ peakdetect = function () {
    *    cnv = createCanvas(100,100);
    *    textAlign(CENTER);
    *  
-   *    soundFile = loadSound('assets/beat.mp3');
+   *    soundFile = loadSound('beat.mp3');
    *    fft = new p5.FFT();
    *    peakDetect = new p5.PeakDetect();
    *  
