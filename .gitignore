@@ -86,8 +86,6 @@ Temporary Items
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
 
-# Migration data
-scripts/migrate/data
 
-# Test reports
-test/reports/*
+# VSCode preferences
+.vscode 
