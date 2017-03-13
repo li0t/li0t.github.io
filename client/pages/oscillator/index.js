@@ -180,7 +180,6 @@ function drawQuad() {
  * Initialize settings
  */
 function setup() {
-console.log('when is this called?')
     createCanvas(1200, 800);
     background(COLOR.BACKGROUND.R, COLOR.BACKGROUND.G, COLOR.BACKGROUND.B);
     strokeWeight(8);
@@ -189,8 +188,8 @@ console.log('when is this called?')
     osc = new p5.Oscillator();
     osc.setType('sine');
     osc.amp(0.5, 0.05);
-
 }
+
 console.log('before ths')
 /*
  * Draw fps

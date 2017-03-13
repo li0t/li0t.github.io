@@ -2,7 +2,6 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
-@import 'customs/index';
 @import 'font-awesome.min.css';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
 
@@ -63,33 +62,29 @@
 	@mixin spans($x) {
 		@for $i from 0 through 10 {
 
-			@if ($i > 0) {
-				.span-#{$i} {
-					width: ($x * $i);
-				}
-			}
-
-			@if ($i < 10) {
-				.span-#{$i}-5 {
-					width: ($x * $i) + ($x * 0.5);
+				.span-1-#{$i} {
+					width: ($x * $i) * 0.1;
 				}
 
-				.span-#{$i}-25 {
-					width: ($x * $i) + ($x * 0.25);
+				.span-5-#{$i} {
+					width: ($x * $i) * 0.5;
 				}
 
-				.span-#{$i}-75 {
-					width: ($x * $i) + ($x * 0.75);
+				.span-25-#{$i} {
+					width: ($x * $i) * 0.25;
 				}
 
-				.span-#{$i}-85 {
-					width: ($x * $i) + ($x * 0.85);
+				.span-75-#{$i} {
+					width: ($x * $i) * 0.75;
 				}
 
-				.span-#{$i}-95 {
-					width: ($x * $i) + ($x * 0.95);
+				.span-85-#{$i} {
+					width: ($x * $i) * 0.85;
 				}
-			}
+
+				.span-95-#{$i} {
+					width: ($x * $i) * 0.95;
+				}
 		}
 	}
 
@@ -140,3 +135,6 @@
 
 	@import 'layout/page-wrapper';
 	@import 'layout/wrapper';
+
+// Customs that override everything
+    @import 'customs/index';
