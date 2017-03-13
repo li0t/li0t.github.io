@@ -22,10 +22,6 @@ const outfiles = {
   styles: 'main'
 };
 
-console.log(paths.dest.styles + ALL_FILES)
-console.log(EXCLUDE + paths.dest.styles)
-console.log( exclusions.styles)
-
 /**** STYLES ****/
 const styles = require('./build/styles');
 
