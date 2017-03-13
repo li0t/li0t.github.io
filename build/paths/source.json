@@ -1,0 +1,7 @@
+{
+    "styles": [
+    "assets/sass/main.scss",
+    "assets/sass/noscript.scss"
+  ]
+
+}

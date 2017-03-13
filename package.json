@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/li0t/li0t.github.io/issues"
   },
-  "homepage": "https://github.com/li0t/li0t.github.io#readme"
+  "homepage": "https://github.com/li0t/li0t.github.io#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-expect-file": "0.0.7",
+    "gulp-if": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0"
+  }
 }
