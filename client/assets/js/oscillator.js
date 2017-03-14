@@ -188,10 +188,10 @@ function drawQuad() {
  */
 function setup() {
 
-    var parent = document.getElementById('oscillator').parentNode;
+    var parent = document.getElementById('oscillator');
 
-    var height = parent.offsetHeight - (parent.offsetHeight * PADDING);
-    var width = parent.offsetWidth  - (parent.offsetWidth * PADDING);
+    var height = parent.offsetHeight;
+    var width = parent.offsetWidth;
 
      canvas = createCanvas(width, height);
  
