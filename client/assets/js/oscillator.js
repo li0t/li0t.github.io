@@ -63,10 +63,10 @@ var origin = {
 
 function setCanvasSize(width, height) {
 
-    parent.style.width = width;
-    parent.style.height = height;
+  parent.style.width = width;
+  parent.style.height = height;
 
-    canvas.resize(width, height);
+  canvas.resize(width, height);
 }
 
 /**
@@ -88,11 +88,12 @@ function onKeyDown(e) {
  * Play the oscillator
  */
 function mousePressedOnCanvas() {
-  if (canvasMaximized) {
-    return play();
-  }
+  play();
+  // if (canvasMaximized) {
+  //  return play();
+  //}
 
-  canvasMaximized = true;
+  //canvasMaximized = true;
 
   //fullscreen(true);
 
@@ -224,7 +225,7 @@ function drawQuad() {
  */
 function setup() {
 
-parent = document.getElementById('oscillator');
+  parent = document.getElementById('oscillator');
 
   canvasHeight = parent.offsetHeight;
   canvasWidth = parent.offsetWidth;
