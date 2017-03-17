@@ -24,9 +24,9 @@ var COLOR = {
     G: 0,
     B: 0,
     BACKGROUND: {
-        R: 136,
-        G: 12,
-        B: 43
+        R: 204,
+        G: 255,
+        B: 245
     },
     STROKE: {
         R: 40,
