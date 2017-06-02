@@ -29,9 +29,10 @@ function checkLoveBtnClick() {
   var theLoveIs = loves[parseInt(theAnswerIs)];
 
   var loveCount = theAnswerIs ? ++youDoLoveMe : ++youDontLoveMe;
+  var lovePercent  = (loveCount * 100) /  (youDoLoveMe  + youDontLoveMe); 
 
-  var descriptionOfLove = theLoveIs + ' ' + loveCount + ' times.'
-
+  var descriptionOfLove = theLoveIs + ' ' + loveCount + ' times. Which is the ' + lovePercent.toFixed(2) + '% of my love.';
+ 
   loveMeter.text(descriptionOfLove);
 
 }
